@@ -1,0 +1,639 @@
+
+
+p.lastupdated {
+    font-size: 70%;
+    margin: 1rem 0 0 0;
+    font-weight: 400;
+}
+
+p.copywrite {
+    font-weight: 500;
+}
+
+table {
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 1rem;
+}
+
+table th {
+  background: #344854;
+  color: white;
+  padding: .75rem;
+}
+
+table tr,td,th {
+  padding: .75rem;
+}
+
+/* table.schedule th {
+  background: #bf9380;
+  color: white;
+}
+
+table.schedule {
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+  border-collapse:  collapse;
+}
+
+table.schedule tr, table.schedule th, table.schedule td {
+  padding: .75rem;
+  border-width: 1px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-color: black;
+} */
+
+/* Presentation:  No underlines on links in schedule unless you're
+ * moving the mouse over it. */
+
+/* table.schedule tr.lecture { background: white; }
+table.schedule tr.lecture.alt { background: #ddd; }
+table.schedule tr.noclass { background: lime; }
+table.schedule tr.exam    { background: yellow; }
+table.schedule tr.recitation { background: #ccf; }
+table.schedule tr.recitation.alt { background: #ccf; }
+table.schedule tr.lechead { background: yellow; font-weight: bold; text-align: center; } */
+
+div#textbooks {
+  position: relative;
+  vertical-align: top;
+  float: left;
+  width: 45%;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-right: 1em;
+}
+
+div#Grading {
+  position: relative;
+  vertical-align: top;
+  float: right;
+  padding-left: 0;
+  padding-right: 1em;
+  width: 45%;
+}
+
+#Schedule h2 { text-align: center; }
+#Calendar h2 { text-align: center; }
+
+h2.left {text-align: left; }
+
+div#Schedule {
+  /* border-top: 1px solid #bf9380; */
+  /* clear: both; */
+  /* margin-top: 5em; */
+  float:  none;
+  width: 100%;
+}
+
+div#prerequisites, div#staff, div#policies, div#resources {
+ clear: left;
+ border-top: 1px solid #bf9380;
+}
+
+span.email {
+ font-family: Courier, monospace;
+ font-size: 85%;
+}
+
+div.clear {
+  clear: both;
+}
+
+/* Margins for elements inside divs of class section */
+div.section {
+    border-top: 1px solid #DDDDDD;
+}
+/* .section p, ul, ol {
+  margin-left:50px;
+} */
+
+.section h3 {
+	margin-left:25px;
+}
+
+#title {
+    font-family: 'Open Sans', serif;
+    font-size: 1rem;
+    padding-left: 1em;
+}
+
+body {
+  background: #f0f0f0 !important;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: 2.2rem;
+    letter-spacing: 0.2px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.2px;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.2px;
+}
+
+/* latest announcements on index page */
+.announcement-banner {
+    /* padding: 10px 40px 1px 40px; */
+    border-radius: 25px;
+    padding: 20px;
+    /* box-shadow: 1px 1px 5px 1px #2265c3, -1px -1px 5px 1px #2265c3; */
+}
+
+#scroll-container {
+    overflow: hidden;
+}
+
+#scroll-text {
+    text-align: right;
+
+    /* animation properties */
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+    width: 100%;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from { -moz-transform: translateX(-100%); }
+    to { -moz-transform: translateX(100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(-100%); }
+    to { -webkit-transform: translateX(100%); }
+}
+
+@keyframes my-animation {
+    from {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    to {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+dl.newslist {
+ margin: 0;
+ padding: 0;
+ background-color: #fff;
+ padding: 15px 0;
+ border-radius: 5px;
+}
+
+dl.newslist dt {
+ display: inline;
+ padding-left: 0;
+ color: #000;
+ font-weight: 600;
+ margin-bottom: 0.2em;
+}
+
+dl.newslist dd {
+    padding-bottom: 1em;
+    margin: 0.5em 1em 0 1em;
+    padding-left: 0;
+}
+
+/* announcements page */
+.announcement-box {
+    padding: 0 40px 5px 40px;
+    border-radius: 15px;
+}
+
+ul.announcement-box {
+    list-style-type: none;
+}
+
+.announce-li {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px 50px 50px 50px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px #677889;
+    transition: 0.2s;
+}
+
+.announce-li:hover {
+    box-shadow: 4px 4px 10px #677889;
+    transition: 0.2s;
+}
+
+.announce-all-text {
+    margin: auto;
+    width: 95%;
+}
+
+.announce-header {
+    padding-bottom: 0px;
+}
+
+.announce-date {
+    padding: 0 5px;
+    text-align: center;
+    display: inline-block;
+    background-color: #d5eafb;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+.announce-content {
+    padding-top: 10px;
+    /* background-color: #deeaf0; */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.announce-title {
+    padding-right: 5px;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+#overview_main {
+    /* margin-top: 20px; */
+}
+
+.sitenav {
+    background-color: #344854;
+    padding: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.sitenav .navbar-nav .nav-link {
+  color: #ffffff !important;
+  position: sticky;
+  letter-spacing: 0.5px;
+}
+
+.nav-item {
+    padding: 0 10px;
+    margin: 0 15px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    background-color: #677889;
+    transition: 0.3s;
+}
+
+.siteheader-special {
+    padding-top: 10rem;
+    padding-bottom: 0rem;
+    background-image: url(../images/cs138_banner_png.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:50vh;
+    transition: .5s;
+ }
+
+ .siteheader-special:hover {
+     padding-top: 10rem;
+     padding-bottom: 0rem;
+     background-image: url(../images/138_staff_bg.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height:50vh;
+  }
+
+.siteheader {
+    padding-top: 10rem;
+    padding-bottom: 0rem;
+    background-image: url(../images/cs138_banner_png.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:50vh;
+ }
+
+.headline {
+  text-decoration: none;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.headline a {
+  color: rgb(255, 255, 255) !important;
+}
+
+.headline a:hover
+{
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #f7f7f7;
+  color: #282828;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+#give-page-height {
+    overflow: hidden;
+}
+
+.main {
+  padding-bottom: 10rem;    /* Footer height */
+  margin-top: 2rem;
+}
+
+.main a {
+    /* text-shadow: 2px 2px 5px #f98b57; */
+    text-outline: none;
+    text-decoration: none;
+    color: #006ce7;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.main a:hover, a:focus {
+    color: #006ce7;
+    background-size: 100% 1px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 7rem;            /* Footer height */
+}
+
+.staff {
+  border-radius: 15px;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  box-shadow: 5px 5px 8px #dfdfdf;
+  transition: 0.2s;
+}
+
+.staff:hover {
+  box-shadow: 8px 8px 8px #d6d6d6;
+  transition: 0.2s;
+}
+
+.staff-group-photo {
+    display:block;
+    margin:auto;
+    height: 20vh;
+}
+
+.staff-text {
+    margin-top: 10px;
+}
+
+/* .staff-image {
+    width: 220px;
+    height: 220px;
+    background-size: cover;
+    transition: 0.2s;
+    background-image: url("../images/people/theo.jpg");
+}
+
+.staff-image:hover {
+    max-width: 100%;
+    background-image: url("../images/fun/theo.jpg");
+} */
+
+.staff-image {
+    width: 220px;
+    height: 220px;
+    background-size: cover;
+    transition: 0.2s;
+    margin: auto;
+}
+
+.staff-image-prof {
+    background-image: url("../images/people/theo.jpg");
+}
+
+.staff-image-prof:hover {
+    max-width: 100%;
+    background-image: url("../images/fun/theo.jpg");
+}
+
+.staff-image-ta-01 {
+    background-image: url("../images/fun/march.png");
+}
+
+.staff-image-ta-01:hover {
+    max-width: 100%;
+    background-image: url("../images/people/march.jpg");
+}
+
+.staff-image-ta-02 {
+    background-image: url("../images/fun/yuming.png");
+}
+
+.staff-image-ta-02:hover {
+    max-width: 100%;
+    background-image: url("../images/people/yuming.jpg");
+}
+
+.staff-image-ta-03 {
+    background-image: url("../images/fun/liam.png");
+}
+
+.staff-image-ta-03:hover {
+    max-width: 100%;
+    background-image: url("../images/people/liam.jpg");
+}
+
+.staff-image-ta-04 {
+    background-image: url("../images/fun/junewoo.png");
+}
+
+.staff-image-ta-04:hover {
+    max-width: 100%;
+    background-image: url("../images/people/junewoo.jpg");
+}
+
+.staff-image-ta-05 {
+    background-image: url("../images/fun/jeremy.png");
+}
+
+.staff-image-ta-05:hover {
+    max-width: 100%;
+    background-image: url("../images/people/jeremy.jpg");
+}
+
+.staff-image-ta-06 {
+    background-image: url("../images/fun/neil.png");
+}
+
+.staff-image-ta-06:hover {
+    max-width: 100%;
+    background-image: url("../images/people/neil.jpg");
+}
+
+.staff-image-ta-07 {
+    background-image: url("../images/fun/milanca.png");
+}
+
+.staff-image-ta-07:hover {
+    max-width: 100%;
+    background-image: url("../images/people/milanca.jpg");
+}
+
+.staff-image-ta-08 {
+    background-image: url("../images/fun/arvind.png");
+}
+
+.staff-image-ta-08:hover {
+    max-width: 100%;
+    background-image: url("../images/people/arvind.jpg");
+}
+
+.people {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.assignment-section {
+    margin-top: 3rem;
+}
+
+.about-text {
+    font-size: 0.8rem;
+    height: 80px;
+}
+
+.email-text {
+    color: #006ce7;
+    font-size: 1rem;
+}
+
+.login-text {
+    color: #006ce7;
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 990px), (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+/* Force table to not be like tables anymore */
+table, thead, tbody, th, td, tr {
+    display: block;
+}
+
+/* Hide table headers (but not display: none;, for accessibility) */
+thead tr, tr th {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+tr:nth-child(n+2) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+td {
+    /* Behave  like a "row" */
+    border: none;
+    position: relative;
+    padding-left: 50%;
+}
+
+td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+/* Lectures table */
+table.assignments td:nth-of-type(1):before { content: "Topic"; }
+table.assignments td:nth-of-type(2):before { content: "Assigned"; }
+table.assignments td:nth-of-type(3):before { content: "Due"; }
+table.assignments td:nth-of-type(4):before { content: "Notes"; }
+
+/* Schedules table */
+table.schedule td:nth-of-type(1):before { content: "Date"; }
+table.schedule td:nth-of-type(2):before { content: "Topics"; }
+table.schedule td:nth-of-type(3):before { content: "Recordings"; }
+table.schedule td:nth-of-type(4):before { content: "Readings"; }
+table.schedule td:nth-of-type(4):before { content: "Operation Stories"; }
+
+/* Makes sure empty cells won't have labels */
+table td:empty { display: none; }
+
+div#textbooks {
+  position: relative;
+  width: 90%;
+  float: left;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+div#Grading {
+  position: relative;
+  width: 90%;
+  float: left;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+#overview_main {
+    padding: 0 1rem;
+    /* margin-top: 20px; */
+}
+
+}
+
+
+.newslist p .see-all-link {
+    background-color: #77899a;
+    border-radius: 200px;
+    color: white;
+    background-size: 0px 0px;
+}
+
+.newslist p .see-all-link:hover {
+    color: white;
+    background-color: #697b8c;
+}

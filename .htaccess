@@ -1,0 +1,11 @@
+# This makes sure that people can't access our solutions outside of Brown
+ErrorDocument 403 /courses/cs138/s22/403.html
+
+order deny,allow
+deny from all
+allow from .brown.edu
+allow from .cs.brown.edu
+allow from 128.148
+allow from 138.16
+allow from 10
+allow from 68.227.185.245
